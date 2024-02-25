@@ -1,0 +1,30 @@
+<% if(typeof errors != 'undefined')   { %>
+    <% errors.forEach(function(error) { %>
+      
+          <h1><%= error.msg %> </h1>
+           
+   <% }); %>
+<% } %>
+
+
+<% if(success_msg != '') { %>
+
+    <h1>
+        <%=success_msg %>
+    </h1>
+
+<% } %>
+
+
+
+<% if(error_msg != '') { %>
+
+    <%= error_msg %>
+
+<% } %>
+
+<% if(error != '') { %>
+
+    <%= error %>
+
+<% } %>
